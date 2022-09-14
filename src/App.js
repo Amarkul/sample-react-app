@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import PostList from './components/PostList';
+import Greet from './Learnings/Greet';
+import { Button } from 'bootstrap';
+import Message from './Learnings/Message';
+import Form from './components/Form';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <Form />
     </div>
-  );
+    
+    /* <div>
+      <PostList />
+    </div>
+    
+    
+   <div>
+      <Message />
+    </div>
+    
+    <div className="App">
+     <Greet name='amar' lname='kulkanri'>
+       <p>This is children props</p>
+     </Greet>
+     <Greet name='aniket' lname='raut'>
+       <button>submit</button>
+     </Greet>
+     <Greet name='pragati' lname='nimdeo'>
+      <button>exit</button>
+     </Greet>
+    </div> */
+    
+  ); 
 }
 
 export default App;
